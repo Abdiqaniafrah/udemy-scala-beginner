@@ -25,6 +25,8 @@ object ValuesVariablesTypes extends App {
   // Varibales
 
   // VAR can be reassigned/mutable
+  // Changing/Reassigning a variable is known as a SIDE EFFECT
+
   var aVariable: Int = 4
 
   aVariable = 5 // side effects
