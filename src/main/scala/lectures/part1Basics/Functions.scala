@@ -64,24 +64,32 @@ object Functions extends App {
 
   // 3.
 
-  def fibonacci(n: Int): Int = {
+  def factorial(n: Int): Int = {
     if (n <= 2) 1
-    else fibonacci(n - 1) + fibonacci(n - 2)
+    else factorial(n - 1) + factorial(n - 2)
   }
-    println(fibonacci(8))
+    println(factorial(8))
 
 
     // 4.
 
-    def primeNumbers(n: Int): Boolean = {
-      // auxiliary functions inside a code block
-      // does N have any prime numbers until T
-     def isPrimeUntil(t: Int): Boolean =
-        if (t <= 1) true
-        else n % t != 0 && isPrimeUntil(t - 1)
-        isPrimeUntil(n / 2)
-    }
-    println(primeNumbers(37))
-    println(primeNumbers(2003))
-    println(primeNumbers(37 * 17))
+  def fibonacci(n: Int): Int =
+    if (n <= 2) 1
+    else fibonacci(n-1) + fibonacci(n-2)
+
+  // 1 1 2 3 5 8 13 21
+  println(fibonacci(8))
+
+  def isPrime(n: Int): Boolean = {
+    // auxiliary functions inside a code block
+    // does N have any prime numbers until T
+    def isPrimeUntil(t: Int): Boolean =
+      if (t <= 1) true
+      else n % t != 0 && isPrimeUntil(t-1)
+
+    isPrimeUntil(n / 2)
+  }
+  println(isPrime(37))
+  println(isPrime(2003))
+  println(isPrime(37 * 17))
 }
