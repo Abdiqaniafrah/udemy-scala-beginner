@@ -29,8 +29,4 @@ object CBNvsCBV  extends App {
   def printFirst(x: Int, y: => Int) = println(x)
   // The by name paramater (=>) delays the evaluation of the expression passed here until its used. Since the parameters Y is never used. infinite is never evaluated
   printFirst(34, infinite())
-
-
-
-
 }
