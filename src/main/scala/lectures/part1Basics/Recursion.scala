@@ -3,7 +3,7 @@ package lectures.part1Basics
 import scala.annotation.tailrec
 import scala.jdk.Accumulator
 
-
+// TODO: Look into recursion more 
 object Recursion extends App {
 
   // Recursion function
