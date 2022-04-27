@@ -14,7 +14,6 @@ object Objects extends App {
   def canFly: Boolean = false
 }
   // factory method
-  def from (mother: Person, father: Person): Person = new Person ("abdi")
 
   // Writing class and objects in the same scope is called COMPANIONS
   // COMPANIONS - because they are in the same scope and have the same name
