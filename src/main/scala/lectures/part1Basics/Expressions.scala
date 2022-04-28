@@ -1,7 +1,7 @@
 package lectures.part1Basics
 
 object Expressions extends App {
-  val x = 1 + 2 // expressions are evaluated to a value. They are also have a type but the compiler can figure this out
+  val x = 1 + 2 //  the right hand side is an Expression(1 + 2)expressions are evaluated to a value. They are also have a type but the compiler can figure this out
   println(x)
 
   println(1 == x)
@@ -33,13 +33,13 @@ object Expressions extends App {
   // Changing/Reassigning a variable is known as a SIDE EFFECT
 
 
-  val aWeirdValue = (aVariable = 3) // Unit === Voi
+  val aWeirdValue = (aVariable = 3) // Unit === Void
   println(aWeirdValue) // The only value Unit can hold is ()
 
   // Side effect = println, while Loop, reassigning
 
   // Code block - Special type of expression
-  // IF something is on thr right hand side of a VAL, IT IS  an expression
+  // IF something is on the right hand side of a VAL, IT IS  an expression
   val aCodeBlock = { // curly braces denotes a code block
     val y = 2
     val z = y + 1
