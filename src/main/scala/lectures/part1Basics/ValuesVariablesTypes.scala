@@ -25,7 +25,9 @@ object ValuesVariablesTypes extends App {
   // Varibales
 
   // VAR can be reassigned/mutable
-  // Changing/Reassigning a variable is known as a SIDE EFFECT
+  // Changing/Reassigning a variable is known as a SIDE EFFECT in FUNCTIONAL PROGRAMMING
+  // SIDE EFFECTS allow you too see what your program is doing
+  // EXAMPLES of SIDE EFFECTS = changing a variable, printing something to the console, displaying something on screen
 
   var aVariable: Int = 4
 
