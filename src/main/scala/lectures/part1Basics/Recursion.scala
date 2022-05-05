@@ -3,7 +3,6 @@ package lectures.part1Basics
 import scala.annotation.tailrec
 import scala.jdk.Accumulator
 
-// TODO: Look into recursion more
 object Recursion extends App {
 
   // Recursion function
@@ -70,6 +69,7 @@ object Recursion extends App {
         if (!isStillPrime) false
         else if (t <= 1) true
         else isPrimeTailrec(t - 1, n % t != 0 && isStillPrime)
+
 
       isPrimeTailrec(n / 2, true)
     }

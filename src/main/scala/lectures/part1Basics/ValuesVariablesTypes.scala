@@ -5,6 +5,8 @@ import java.util.function.LongToDoubleFunction
 object ValuesVariablesTypes extends App {
 
 
+  // Variable declaration = <variable keyword> <variable name> : <variable type> = <value>
+  //                     eg = var/val number_1 = 100
   // VALS are immutable and cannot be changed
   // Val followed by the name then colon and then the type
   val x: Int = 42
